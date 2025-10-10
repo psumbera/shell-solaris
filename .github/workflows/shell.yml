@@ -12,6 +12,7 @@ jobs:
       id: shell
       uses: vmactions/solaris-vm@main
       with:
+        release: "11.4-gcc"
         run: |
           pwd
           ls -lah
