@@ -12,7 +12,7 @@ jobs:
       id: shell
       uses: vmactions/solaris-vm@main
       with:
-        release: "11.4-gcc"
+        release: "11.4-clang-19"
         run: |
           gsed -i 's;solaris;solaris.mydomain solaris;' /etc/hosts
           domainname mydomain
